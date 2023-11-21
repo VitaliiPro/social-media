@@ -1,3 +1,68 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "prettier",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["prettier", "import", "@typescript-eslint"],
+  "root": true,
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-var-requires": "off",
+    "no-confusing-arrow": "off",
+    "camelcase": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import": "off",
+    "no-duplicate-imports": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "external",
+          "builtin",
+          "internal",
+          "sibling",
+          "parent",
+          "index"
+        ]
+      }
+    ],
+    "space-before-function-paren": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "react/jsx-filename-extension": [
+      2,
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "eqeqeq": "error",
+    "no-else-return": "error",
+    "newline-before-return": "error",
+    "arrow-body-style": "error"
+  },
+  "ignorePatterns": [
+    "src/slices/index.ts"
+  ]
 }
