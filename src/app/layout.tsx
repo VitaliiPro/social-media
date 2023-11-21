@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import React from "react";
 import { Inter } from "next/font/google";
-import Sidebar from "@/components/sidebar";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,12 +20,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({
   children: React.ReactNode;
 }) => (
   <html lang="en">
-    <body className={inter.className}>
-      <div className="flex p-10 gap-10 h-full">
-        <Sidebar />
-        {children}
-      </div>
-    </body>
+    <body className={inter.className}>{children}</body>
   </html>
 );
 
