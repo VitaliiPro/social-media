@@ -11,6 +11,7 @@
     "lint-staged": "lint-staged"
   },
   "dependencies": {
+    "@next/env": "^14.0.3",
     "@typescript-eslint/eslint-plugin": "^6.11.0",
     "@typescript-eslint/parser": "^6.11.0",
     "eslint-config-prettier": "^9.0.0",
@@ -18,12 +19,15 @@
     "eslint-plugin-prettier": "^5.0.1",
     "lint-staged": "^15.1.0",
     "next": "14.0.3",
+    "pg": "^8.11.3",
     "prettier": "^3.1.0",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
     "@types/node": "^20",
+    "@types/pg": "^8.10.9",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.16",
